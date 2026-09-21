@@ -180,7 +180,7 @@ const USE_REMOTE_ICON = true;
 
 ---
 
-## ☕ Support Project
+## 🧋 Support Project
 
 Kalau plugin ini bermanfaat, kamu bisa traktir cendol buat developer:
 
