@@ -1,0 +1,23 @@
+{
+    "id": "com.bluebarry.jawascript",
+    "name": "JawaScript Runner",
+    "main": "main.js",
+    "version": "1.2.1",
+    "readme": "readme.md",
+    "icon": "icon.png",
+    "minVersionCode": 316,
+    "author": {
+        "name": "BlueBarry",
+        "github": "abim70750-commits",
+        "role": "Plugin Developer",
+        "avatar": "https://github.com/abim70750-commits.png?size=200"
+    },
+    "contributors": [
+        {
+            "name": "Arwildo",
+            "github": "arwildo",
+            "role": "JawaScript Developer",
+            "avatar": "https://github.com/arwildo.png?size=200"
+        }
+    ]
+}
