@@ -27,7 +27,7 @@ Dibuat untuk developer Jawa yang ingin ngoding dengan *nganggo basa ibu*, tanpa 
 ## Table of Contents
 
 - [Fitur](#-fitur)
-- [Prasyarat](#-prasyarat)
+- [Persyarat](#-persyarat)
 - [Instalasi](#-instalasi)
 - [Cara Pakai](#-cara-pakai)
 - [Contoh Kode](#-contoh-kode)
@@ -53,7 +53,7 @@ Dibuat untuk developer Jawa yang ingin ngoding dengan *nganggo basa ibu*, tanpa 
 
 ---
 
-## 📋 Prasyarat
+## 📋 Persyarat
 
 - **Acode** versi **316** atau lebih baru.
 - Android **7.0+**.
