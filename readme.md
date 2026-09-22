@@ -30,6 +30,8 @@ Built for Javanese developers who want to code in their *mother tongue* without 
 - [Requirements](#-requirements)
 - [Installation](#-installation)
 - [Usage](#-usage)
+- [Auto-complete & Snippets](#-auto-complete--snippets)
+- [Export to JavaScript](#-export-to-javascript)
 - [Code Examples](#-code-examples)
 - [JawaScript Keywords](#-jawascript-keywords)
 - [Keybindings](#-keybindings)
@@ -44,6 +46,9 @@ Built for Javanese developers who want to code in their *mother tongue* without 
 
 - **Run Directly from the Editor**: Run a `.jawa` file with one tap on the ▶️ side button, or press `Ctrl+Alt+J`.
 - **Built-in Transpiler**: Automatically converts Javanese keywords (`yen`, `kanggo`, `tampilno`, etc.) into valid JavaScript.
+- **Auto-complete**: Smart suggestions for keywords, built-ins, atoms, and operators as you type.
+- **Snippets**: Expand common code patterns (if-else, for loop, class, try-catch, etc.) with a few keystrokes.
+- **Export to JavaScript**: Save the compiled output as a `.js` file next to your `.jawa` file.
 - **Async Support**: Top-level `enteni` (await) is fully supported thanks to an async wrapper.
 - **Custom Console**: `tampilno` output is rendered in a dedicated panel with clean formatting.
 - **Localized Errors**: Error messages show line numbers that match your original `.jawa` code.
@@ -81,6 +86,8 @@ Built for Javanese developers who want to code in their *mother tongue* without 
 
 ## 🚀 Usage
 
+### Basic — Writing and Running
+
 1. Open Acode and create a new file with the `.jawa` extension (for example: `halo.jawa`).
 2. Write your JawaScript code. For example:
 
@@ -92,6 +99,53 @@ tampilno("Halo, " + jeneng + "!");
 3. Save the file.
 4. Tap the **▶️ Run** button on the side of the editor, or press `Ctrl+Alt+J`.
 5. The output appears in the dedicated panel.
+
+### Preview the Compiled JavaScript
+
+Open the Command Palette (`Ctrl+Shift+P`) → search for **"JawaScript: Show compiled JavaScript"**. The generated JS appears in a panel, so you can inspect what's happening under the hood before running.
+
+---
+
+## 💡 Auto-complete & Snippets
+
+As you type inside a `.jawa` file, the editor suggests relevant completions:
+
+- **Keywords**: `yen`, `ora`, `kanggo`, `nganti`, `fungsi`, `kelas`, `balekno`, etc.
+- **Atoms**: `bener`, `salah`, `suwung`, `rajelas`, `iki`.
+- **Built-in functions**: `tampilno`, `tampil.tabel`, `jupuk`, `kirim`, etc.
+- **Word operators**: `lan`, `utawa`, `padhaKaro`, `gedhe`, `cilik`, etc.
+
+### Snippets
+
+Type the snippet prefix and pick it from the suggestion list to auto-expand common patterns:
+
+| Snippet | Expands to |
+|---|---|
+| `yen-block` | `yen () { ... }` |
+| `yen-ora` | `yen () { ... } ora { ... }` |
+| `kanggo-loop` | `kanggo (ono i = 0; i cilik 10; i++) { ... }` |
+| `nganti-loop` | `nganti () { ... }` |
+| `fungsi-block` | `fungsi () { ... }` |
+| `kelas-block` | `kelas { konstruktor() { ... } }` |
+| `nyoba-block` | `nyoba { ... } nompo (e) { ... }` |
+
+For example, type `yen-ora`, then press the snippet suggestion, and the full if-else structure appears — you just fill in the blanks.
+
+---
+
+## 📤 Export to JavaScript
+
+You can save the compiled JavaScript as a standalone `.js` file:
+
+1. Open a `.jawa` file.
+2. Open the Command Palette (`Ctrl+Shift+P`).
+3. Search for **"JawaScript: Export compiled JavaScript to .js file"**.
+4. The compiled `.js` file is saved next to your `.jawa` file.
+
+This is useful for:
+- Sharing your code with developers who don't use JawaScript.
+- Running the generated JS in a browser or Node.js environment.
+- Inspecting the transpiled output as a real file.
 
 ---
 
@@ -167,7 +221,7 @@ sambil fungsi ambilData() {
 
 ## 🎨 Icon Configuration
 
-The plugin supports two tab icon modes. Change it in `main.js`, line 12:
+The plugin supports two tab icon modes. Change it in `main.js`, line 13:
 
 ~~~javascript
 const USE_REMOTE_ICON = true;
@@ -176,7 +230,7 @@ const USE_REMOTE_ICON = true;
 //                      false = use the js-logo.png file from the plugin folder
 ~~~
 
-- If `true`, the icon is loaded from `ICON_URL` (line 14).
+- If `true`, the icon is loaded from `ICON_URL` (line 15).
 - If `false`, the icon is loaded from the `js-logo.png` file.
 
 ---
